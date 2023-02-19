@@ -1,4 +1,4 @@
-# Python
+# Python 🐍
 
 A combination of my Python projects. 
 

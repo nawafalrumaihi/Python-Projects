@@ -1,42 +1,16 @@
-# calculate area of rectangle:
+# This is a sample Python script.
 
-# assinging two variables / statements in a single line of code
-l = 10; b = 5
+# Press ⌃R to execute it or replace it with your code.
+# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
-print ('Area of rectangle:', l * b)
 
-###
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
-#multi-line statements
-addition = 10 + 20 + \
-           30 + 40 + \
-           50 + 60 + 70
 
-print(addition)
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
 
-#implicit continuation:
-addition2 = (10 + 20 +
-            30 + 40 +
-            50 + 60 + 70)
-
-print(addition2)
-
-### we can also use square brackets [] to create a list. Then, if required, we can pleace
-## each list item on a single line for better readability
-# same as square brackets, we can also use curly to ceate a dictionary with every key-value pair
-
-## list example:
-names = ['Emma',
-         'Kelly',
-         'Jessa']
-
-print(names)
-
-# dictionary name as a key and mark as a value
-# string:int
-
-students = {'Emma': 70,
-            'Kelly':65,
-            'Jessa':75}
-
-print(students)
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/

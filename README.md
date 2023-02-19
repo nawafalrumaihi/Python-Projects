@@ -2,7 +2,7 @@
 
 A combination of my Python projects. 
 
-Some are exercises and examples provided by Learn Python Programming Masterclass hosted on Udemy, thanks Tim!
+Some are exercises and examples provided by Learn Python Programming Masterclass hosted on Udemy, thanks Tim and JP!
 
 Link: 
 https://www.udemy.com/course/python-the-complete-python-developer-course/

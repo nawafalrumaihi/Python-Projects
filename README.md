@@ -1,6 +1,6 @@
 # Python 🐍
 
-A combination of my Python projects. 
+A combination of various Python projects. 
 
 Some are exercises and examples provided by Learn Python Programming Masterclass hosted on Udemy, thanks Tim and JP!
 

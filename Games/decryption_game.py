@@ -18,12 +18,14 @@ def encrypt_word(word: str):
 
 def choose_random_word(word_shuffler: list):
     if len(word_shuffler) > 0:
-        chosen_word = random.choice(word_shuffler).lower()
+        chosen_word = random.choice(word_shuffler).casefold()
         encrypted_word = encrypt_word(chosen_word)
+        print("*" * 80)
         print(f"Chosen word: {encrypted_word}")
+        print("*" * 80)
         num_guesses = 0
         while "_" in encrypted_word:
-            guess = input("Guess a letter: ").lower()
+            guess = input("Guess a letter: ").casefold()
             if guess in chosen_word:
                 for i, letter in enumerate(chosen_word):
                     if letter == guess:
@@ -32,6 +34,7 @@ def choose_random_word(word_shuffler: list):
             else:
                 print("Incorrect!")
             num_guesses += 1
+        print("*" * 80)
         print(f"Congratulations! You guessed the word in {num_guesses} guesses.")
     else:
         print("Sorry, try again")

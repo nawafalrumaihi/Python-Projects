@@ -5,6 +5,7 @@ with open('nature.txt', encoding='utf-8', newline='') as list_of_words:
     for line in list_of_words:
         sorted_words.append(line.strip())
 
+
 def encrypt_word(word: str):
     # Use a substitution cipher to encrypt the word
     # Replace all letters with underscores except for a few randomly chosen ones
@@ -15,6 +16,7 @@ def encrypt_word(word: str):
         else:
             encrypted_word += letter
     return encrypted_word
+
 
 def choose_random_word(word_shuffler: list):
     if len(word_shuffler) > 0:
@@ -29,7 +31,7 @@ def choose_random_word(word_shuffler: list):
             if guess in chosen_word:
                 for i, letter in enumerate(chosen_word):
                     if letter == guess:
-                        encrypted_word = encrypted_word[:i] + guess + encrypted_word[i+1:]
+                        encrypted_word = encrypted_word[:i] + guess + encrypted_word[i + 1:]
                 print(f"Correct! {encrypted_word}")
             else:
                 print("Incorrect!")
@@ -38,5 +40,6 @@ def choose_random_word(word_shuffler: list):
         print(f"Congratulations! You guessed the word in {num_guesses} guesses.")
     else:
         print("Sorry, try again")
+
 
 choose_random_word(sorted_words)

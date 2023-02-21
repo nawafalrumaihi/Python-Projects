@@ -7,5 +7,9 @@ def sum_numbers(*args: float) -> float:
     result = 0
     for i in args:
         result += i
+        print(result)
     return result
 
+
+user_input = float(input(f'Please enter a number: '))
+sum_numbers(user_input)

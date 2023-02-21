@@ -1,0 +1,22 @@
+import random
+import secrets
+
+# inserts the random list of words into the script using the "with open" function
+# to then store it into the list_of_words variable for easier access throughout the program:
+with open('nature.txt', encoding='utf-8', newline='') as list_of_words:
+    contents = list_of_words.read()
+
+sorted_words = []
+for words in contents:
+    sorted_words.append(words.strip())
+
+def choose_random_word(word_shuffler: list):
+
+    for word in word_shuffler:
+        if word_shuffler != list:
+            print("Sorry, try again")
+        else:
+            print(random.choice(word_shuffler))
+
+choose_random_word(sorted_words)
+

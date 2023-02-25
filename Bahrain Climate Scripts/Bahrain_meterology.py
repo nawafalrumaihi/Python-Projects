@@ -2,8 +2,7 @@ import pandas
 import matplotlib.pyplot as plt
 
 # read the .csv file
-data = pandas.read_csv(
-    '3.1 Environment3.1.1. Meteorological Conditions Statistics3.1.1.1. Temperature (°(...)02_25_2023 17_30_06.csv')
+data = pandas.read_csv('3.1 Environment3.1.1. Meteorological Conditions Statistics3.1.1.1. Temperature (°(...)02_25_2023 17_30_06.csv')
 
 # create a dataframe object containing the data
 df = pandas.DataFrame(data)

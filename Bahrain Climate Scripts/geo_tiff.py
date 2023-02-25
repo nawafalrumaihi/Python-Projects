@@ -2,7 +2,7 @@ from osgeo import gdal
 import numpy as np
 import matplotlib.pyplot as plt
 
-# you can replace the exisiting .tif file with anything you find or want to plotted! 
+# you can replace the exisiting .tif file with anything want to geo-analyzed / plotted! 
 dataset = gdal.Open('land_shallow_topo_8192.tif')
 
 raster_data = dataset.ReadAsArray()

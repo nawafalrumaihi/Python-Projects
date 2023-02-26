@@ -16,3 +16,4 @@ mesh.points = points
 
 # Visualize the mesh using PyVista's `plot` function
 mesh.plot()
+
